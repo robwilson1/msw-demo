@@ -11,11 +11,11 @@ export default function TodoList() {
   });
 
   return (
-    <ul className="space-y-4">
+    <ul className="space-y-4 w-screen">
       {todos?.slice(0, 10).map((todo) => (
         <li
           key={todo.id}
-          className={`flex items-center p-4 rounded-lg shadow-md ${todo.completed ? "bg-green-100" : "bg-red-100"}`}
+          className={`flex items-center p-4 rounded-lg shadow-md ${todo.completed ? "bg-green-100" : "bg-red-100"} mx-4`}
         >
           <Image
             src={`https://i.pravatar.cc/50?u=${todo.userId}`}

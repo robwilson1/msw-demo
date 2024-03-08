@@ -28,7 +28,7 @@ describe("The TodoList component", () => {
     screen.debug();
   });
 
-  test.only("should handle empty array", async () => {
+  test("should handle empty array", async () => {
     renderComponent();
 
     server.use(
